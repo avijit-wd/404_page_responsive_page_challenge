@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 40px 60px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+.header__logo span {
+  text-transform: uppercase;
+}
+
+.hero {
+  display: flex;
+}
+
+.left-column {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-column {
+  flex: 3;
+  padding: 30px 40px 30px 140px;
+}
+
+.hero__heading {
+  font-size: 2.2rem;
+  width: 35vw;
+  margin-bottom: 20px;
+  word-spacing: 30px;
+}
+
+.hero__text {
+  font-size: 1rem;
+  text-justify: auto;
+  width: 40vmin;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
+
+.hero__btn {
+  background-color: #222831;
+  padding: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
+  .left-column img {
+    max-width: 50%;
+    height: auto;
+  }
+  body {
+    padding: 20px;
+  }
+  .right-column {
+    padding: 30px 80px;
+  }
+  .hero__heading {
+    font-size: 2.2rem;
+    width: 70vw;
+    margin-bottom: 20px;
+    word-spacing: 20px;
+  }
+  .hero__text {
+    font-size: 0.9rem;
+    width: 80vmin;
+  }
+  .header {
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+  }
+  .hero__btn {
+    background-color: #222831;
+    padding: 12px;
+    font-size: 12px;
+  }
+  .footer__text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .hero {
+    flex-direction: column;
+  }
+  .left-column img {
+    max-width: 70%;
+    height: auto;
+  }
+  body {
+    padding: 10px;
+  }
+  .right-column {
+    padding: 20px 20px;
+  }
+  .hero__heading {
+    font-size: 1.5rem;
+    width: 70vw;
+    margin-bottom: 20px;
+    word-spacing: 20px;
+  }
+  .hero__text {
+    font-size: 0.9rem;
+    width: 80vmin;
+  }
+  .header {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .hero__btn {
+    background-color: #222831;
+    padding: 12px;
+    font-size: 9px;
+  }
+  .footer__text {
+    font-size: 10px;
+  }
+}
